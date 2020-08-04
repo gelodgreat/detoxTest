@@ -14,6 +14,7 @@ import {
   View,
   Text,
   StatusBar,
+  TouchableOpacity
 } from 'react-native';
 
 import {
@@ -40,6 +41,7 @@ const App: () => React$Node = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
+              <TouchableOpacity testId="SEARCH" accessibilityLabel="SEARCH" />
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
                 Edit <Text style={styles.highlight}>App.js</Text> to change this
