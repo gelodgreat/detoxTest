@@ -7,9 +7,13 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "b": "detox build -c android.emu.release",
+    "t": "detox test -c android.emu.release -l trace",
+    "bt": "npm run b && npm run t"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "react": "16.13.1",
     "react-native": "0.63.2"
   },

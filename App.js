@@ -32,7 +32,8 @@ const App: () => React$Node = () => {
       <SafeAreaView>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
+          style={styles.scrollView}
+          testId="SEARCH" accessibilityLabel="SEARCH">
           <Header />
           {global.HermesInternal == null ? null : (
             <View style={styles.engine}>
@@ -41,7 +42,7 @@ const App: () => React$Node = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <TouchableOpacity testId="SEARCH" accessibilityLabel="SEARCH" />
+              <TouchableOpacity />
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
                 Edit <Text style={styles.highlight}>App.js</Text> to change this
